@@ -1,0 +1,40 @@
+# python2gap
+
+This roughly translates a few idioms between python and GAP.
+
+## misc
+
+type                                TypeObj
+
+## lists
+
+mylist.sort(key=key)                SortBy(mylist, key)
+mylist.append(val)                  Add(mylist, val)
+mylist.insert(0, val)               Add(mylist, val, 1)
+mylist[0]                           mylist[1]
+mylist.pop()                        Remove(mylist)
+mylist.pop(2)                       Remove(mylist, 3)
+mylist[1:4]                         mylist{[2..5]}
+mylist[::-1]                        Reversed(mylist)
+mylist + other                      Concatenation(mylist, other)
+mylist.index(obj)                   Position(mylist, obj)
+
+## functional programming
+
+map(fn, mylist)                     List(mylist, fn)
+filter(fn, mylist)                  Filtered(mylist, fn)
+sum                                 Sum
+reduce(fn, mylist)                  Iterated(mylist, fn)
+reduce(operator.mul, mylist, 1)     Product
+all(map(fn, mylist))                ForAll(mylist, fn)
+any(map(fn, mylist))                ForAny(mylist, fn)
+
+## combinatorics
+
+collections.Counter                 Collected
+len                                 Length, Size
+itertools.product                   Cartesian
+itertools.product(myset, repeat=k)  Tuples(myset, k)
+itertools.combinations              Combinations
+itertools.permutations              Arrangements
+math.factorial                      Factorial
