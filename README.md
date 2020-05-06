@@ -12,7 +12,7 @@ If you don't know where they are, type `GAPInfo.RootPaths;` at the GAP prompt to
 
 At present I'm not planning on writing documentation outside the source code.
 I will however use this repo to collect documentation on miscellaneous aspects of GAP I find useful to refer to, such as
-* [cookbook](cookbook.ipynb)
+* [cookbook](https://gilesgardam.github.io/hilux/cookbook.html)
 * [python2gap](python2gap.txt)
 
 ## Get in touch
