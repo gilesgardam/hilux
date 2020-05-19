@@ -1,4 +1,4 @@
-gap> START_TEST("hilux: _demo.tst");
+gap> START_TEST("hilux: zzz_demo.tst");
 gap> # slow demo tests to run last before you start to go zzzzzzz.....
 gap> # AbelianInvariantFactors
 gap> # snappy.Manifold('v2983(3,4)').fundamental_group().gap_string();
@@ -10,3 +10,4 @@ gap> AbelianInvariantFactors(G);
 gap> H := DerivedSubgroup(G);;
 gap> AbelianInvariantFactors(H);
 [ 79326495547269204211026529153, 79326495547269204211026529153 ]
+gap> STOP_TEST("zzz_demo.tst", 10000);
